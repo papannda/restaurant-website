@@ -1,0 +1,392 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+
+html{font-size: 62.5%;}
+
+
+@media screen and (max-width: 767px) { html {
+    font-size: calc(10 / 375 * 100vw);
+}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+html {
+    font-size: 1vw;
+}
+}
+
+body,.body-contact {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #454545;
+    line-height: 1.2;
+    background-image: url(../images/background-green.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.body-contact{
+    background-image: none;
+
+}
+
+a {
+    color: #454545;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+/* 部品
+------------------------------------------ */
+
+.poppins {
+    font-family: Poppins, sans-serif;
+}
+
+.container{
+    padding:0 1.6rem;
+}
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 .3rem;
+    }
+}
+.content-width{
+    max-width: 116rem;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 767px) {
+    .content-width{
+        max-width: 37.5rem;
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.background-color{
+    background-color: #fff;
+}
+
+
+/* ホーム
+------------------------------------------ */
+
+/* ヘッダー
+------------------------------------------ */
+.header{
+    height: 10rem;
+    background-color:beige;
+    padding: 0 2.3rem;
+    
+    
+}
+
+.header-nav{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.header-logo{
+    margin-top: .5rem;
+}
+
+/* カバー
+------------------------------------------ */
+.cover-top {
+background-image: url(../images/main.jpg);
+height: 67rem;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.cover-wrapper{
+    position: absolute;
+    top: 70%;
+    left: 3rem;
+    background-color: #fff;
+    opacity: 0.5;
+    padding: 2rem;
+
+}
+h1{
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+.sub-title-1{
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+.about{padding: 10rem 0 10rem 0;
+        background-color: #fff;}
+
+.about-title,.qa-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.about-detail{
+    font-size: 2rem;
+    margin-bottom: 7rem;
+    padding: 2rem;
+    line-height: 1.7;
+}
+
+.book-button{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 6rem;
+    background-color:darkgrey;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+
+.book-button:hover{
+    background-color: aliceblue;
+}
+
+.qa{
+    background-color: #fff;
+    padding: 7rem;
+}
+
+.qa-list{
+    margin-bottom: 2rem;
+    border: solid 2px #454545;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+}
+
+.qa-list-title, .qa-list-content{
+    padding: 2rem;
+    position: relative;
+}
+
+.qa-list-title::before, .qa-list-content::before{
+    content: 'Q';
+    display: inline-block;
+    color:lightskyblue;
+    width: 3rem;
+    height: 3rem;
+    
+}
+
+.qa-list-title::after{
+    content: '＋';
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 0 95rem;
+    position: absolute;
+    top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.qa-list-content::before{
+    color: chocolate;
+    content: 'A';
+}
+
+.qa-list-title.open::after{
+    content: '－';
+    opacity: 0.5;
+}
+.qa-list-content{
+    display: none;
+}
+
+.footer{
+    padding: 5rem 0 3rem 0;
+    background-color:beige;
+}
+.footer-sns-list-group{
+    display: flex;
+    gap: 10rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.footer-sns-list-group li:hover{
+    opacity: 0.5;
+}
+
+.footer-list img{
+    width: 22rem;
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+}
+
+/* コンタクト
+------------------------------------------ */
+.contact-cover{
+    padding: 6rem 8rem;
+}
+
+.contact-image{
+    background-image: url(../images/koru.jpg);
+    width: 70%;
+    height: 50vh;
+    background-size: 100%;
+    background-position: left center;
+
+}
+
+.contact-title{
+    font-size: 5rem;
+    align-self: center;
+    background: linear-gradient(transparent calc(100% - 10px), #f940bc calc(100% - 10px));
+}
+iframe{
+    width: 100%;
+    
+}
+
+.access{
+    padding: 7rem;
+}
+
+.access-address{
+    font-size: 3rem;
+    text-align: center;
+    border: solid 1px #454545;
+    border-radius: 2rem;
+    padding: 3rem;
+    line-height: 1.7;
+    
+
+}
+
+.contact-extra{
+    font-size: 3rem;
+    line-height: 1.75;
+    text-align: center;
+    padding: 7rem;
+}
+
+.button-position{
+    margin: 5rem auto;
+}
+
+/* メニュー
+------------------------------------------ */
+.menu-list{
+    padding: 5rem;
+}
+.menu-list-title{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.75;
+}
+.menu-list-title-bold{
+    color: #f940bc;
+    font-style: italic;
+}
+.number-large{
+    font-size: 5rem;
+}
+
+.menu-list-box{
+padding-top: 7rem;
+padding-bottom: 8rem;
+
+}
+
+.menu-list-flex{
+    display: flex;
+    margin-bottom: 4rem;
+    gap: 4rem;
+}
+.menu-list-flex:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+figure{
+    width: 50%;
+}
+
+.menu-list-item-image{
+
+    width: 100%;
+    height: 33rem;
+    object-fit: cover;
+}
+
+.text{
+    width: 50%;
+    font-size: 3rem;
+    align-self: center;
+    line-height: 1.5;
+    padding: 2rem;
+
+}
+
+.full-menu{
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+.full-menu-text{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 3rem;
+    line-height: 1.7;
+    background-color:lightgrey;
+    border-radius: 2rem;
+    margin: 6rem auto 7rem;
+    width: 75rem;
+
+}
+.menu-link{
+    text-align: center;
+}
+.menu-link a{
+    display: inline-block;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+    font-weight: 700;
+    justify-content: center;
+    background: linear-gradient(transparent calc(100% - 10px), #f940bc calc(100% - 10px));
+
+
+}
+.menu-link a:hover{
+    color: blue;
+}
